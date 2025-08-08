@@ -28,7 +28,7 @@
 }
 
 /* 노말라이즈 */
-body, ul, li, p {
+body, ul, li, h3, p, span {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -71,6 +71,27 @@ a {
 
 .con {
   width: 1540px;
+}
+
+
+/* ---- .main-banner ---- */
+.main-banner {
+  position: relative;
+}
+
+.main-banner > .text-box > .desc-top {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9d9da0;
+}
+
+.main-banner > .text-box > h3 {
+  margin-top: 6px;
+  font-size: 44px;
+}
+
+.main-banner > .text-box .highlight {
+  color: #800000;
 }
 
 /* ---- footer ---- */
