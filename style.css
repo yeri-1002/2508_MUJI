@@ -94,6 +94,13 @@ a {
   color: #800000;
 }
 
+.main-banner > .text-box > .desc-bottom {
+  font-size: 18px;
+  color: #6c6c72;
+  line-height: 1.8;
+  letter-spacing: -0.02em;
+}
+
 /* ---- footer ---- */
 footer {
   font-family: 'Pretendard-Regular';
