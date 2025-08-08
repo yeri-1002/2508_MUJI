@@ -1,0 +1,137 @@
+/* 폰트 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Semibold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 노말라이즈 */
+body, ul, li, p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 라이브러리 */
+.flex {
+  display: flex;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.con {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* img {
+  width: 100%;
+  display: block;
+} */
+
+
+
+/* 커스텀 */
+.con-min-width {
+  min-width: 1540px;
+}
+
+.con {
+  width: 1540px;
+}
+
+/* ---- footer ---- */
+footer {
+  font-family: 'Pretendard-Regular';
+  background-color: #800000;
+}
+
+footer .f-box {
+  padding: 58px 0 120px;
+  font-size: 15px;
+  color: #EDE1D5;
+}
+
+footer .f-box > .logo-box > a > img {
+  width: 258px;
+}
+
+footer .f-box > .menu-box-1 {
+  margin-top: 21px;
+}
+
+footer .f-box > .menu-box-1 > ul > li.f-head {
+  margin-bottom: 21px;
+  display: block;
+  font-weight: 500;
+}
+
+footer .f-box > .menu-box-1 > ul > li:not(.f-head) {
+  display: inline-block;
+  font-weight: 600;
+}
+
+footer .f-box > .menu-box-1 > ul > li:not(.f-head):not(:last-child)::after {
+  content: "|";
+  margin: 0 10px;
+  color: #EDE1D5;
+}
+
+footer .f-box > .menu-box-2 {
+  margin-top: 15px;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+}
+
+footer .f-box > .menu-box-2 > ul > li {
+  display: inline-block;
+}
+
+footer .f-box > .menu-box-2 > ul > li:not(:last-child):not(:nth-child(3))::after {
+  content: "|";
+  margin: 0 10px;
+  color: #EDE1D5;
+}
+
+footer .f-box > .menu-box-3 {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+footer .f-box > .menu-box-3 > .info-copyright {
+  margin-bottom: 4px;
+}
