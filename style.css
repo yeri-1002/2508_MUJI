@@ -77,33 +77,56 @@ a {
 /* ---- .main-banner ---- */
 .main-banner {
   position: relative;
-  display: flex;
-  align-items: center;
   height: 840px;
   border: 3px solid red;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-banner > .text-box > .desc-top {
+.main-banner .con {
+  width: 1540px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-banner .text-box > .desc-top {
   font-size: 14px;
   font-weight: 400;
   color: #9d9da0;
 }
 
-.main-banner > .text-box > h3 {
+.main-banner .text-box > h3 {
   margin-top: 6px;
   font-size: 44px;
 }
 
-.main-banner > .text-box .highlight {
+.main-banner .text-box .highlight {
   color: #800000;
 }
 
-.main-banner > .text-box > .desc-bottom {
+.main-banner .text-box > .desc-bottom {
   font-size: 18px;
   color: #6c6c72;
   line-height: 1.8;
   letter-spacing: -0.02em;
 }
+
+.main-banner .img-box {
+  max-width: 708px;
+  width: auto;
+  flex: 0 0 auto;
+  border: 3px solid blue;
+}
+
+.main-banner .img-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 
 /* ---- footer ---- */
 footer {
