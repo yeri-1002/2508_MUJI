@@ -101,30 +101,56 @@ a {
 .main-banner .text-box > h3 {
   margin-top: 6px;
   font-size: 44px;
+  margin-bottom: 28px;
 }
 
 .main-banner .text-box .highlight {
   color: #800000;
 }
 
-.main-banner .text-box > .desc-bottom {
+.main-banner .text-box > .sub {
   font-size: 18px;
   color: #6c6c72;
   line-height: 1.8;
   letter-spacing: -0.02em;
 }
 
+.main-banner .text-box > .text-1 {
+  margin-bottom: 24px;
+}
+
+.main-banner .text-box > .text-2 > span {
+  font-weight: 500;
+  color: #800000;
+}
+
 .main-banner .img-box {
   max-width: 708px;
   width: auto;
   flex: 0 0 auto;
-  border: 3px solid blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 262px;
+  margin-top: 179px;
+  z-index: 10;
 }
 
 .main-banner .img-box img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.main-banner .img-bg {
+  position: absolute;
+  width: 728px;
+  height: 536px;
+  top: 0;
+  right: 0;
+  margin-top: 113px;
+  margin-right: 190px;
+  background-color: #D8C8B2;
 }
 
 
