@@ -178,3 +178,76 @@ a {
   font-weight: 500;
   color: #800000;
 }
+/* --- .con-2 끝 --- */
+
+/* --- .magazine 시작 --- */
+.mg-banner {
+  position: relative;
+  width: 100%;
+  height: 590px;
+  overflow: hidden;
+}
+
+.mg-banner > .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: 10; */
+}
+
+.mg-banner > .img-box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mg-banner > .m-container {
+  max-width: 1540px;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+.mg-banner > .m-container > .text-box > .m-logo {
+  display: inline-block;
+}
+
+.mg-banner > .m-container > .text-box > .m-logo > img {
+  display: block;
+  width: 340px;
+  height: auto;
+}
+
+.mg-banner > .m-container > .text-box > .sub {
+  font-size: 18px;
+  margin-top: 54px;
+  color: #F2F1ED;
+}
+
+.mg-banner > .m-container > .text-box > .m-button > a {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  color: #F2F1ED;
+  margin-top: 16px;
+}
+
+.mg-banner > .m-container > .text-box > .m-button > a::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: -3px;
+  background-color: #F2F1ED;
+  transition: width .3s;
+}
+
+.mg-banner > .m-container > .text-box > .m-button > a:hover::after {
+  width: 100%;
+}
