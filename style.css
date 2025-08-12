@@ -61,57 +61,120 @@ a {
   z-index: 100;
 }
 
-.container .text-box > .desc-top {
+/* --- .con-1 시작 --- */
+.con-1 .text-box > .desc-top {
   font-size: 14px;
   font-weight: 400;
   color: #9d9da0;
 }
 
-.container .text-box > h3 {
+.con-1 .text-box > h3 {
   margin-top: 6px;
   font-size: 44px;
   margin-bottom: 28px;
 }
 
-.container .text-box .highlight {
+.con-1 .text-box .highlight {
   color: #800000;
 }
 
-.container .text-box > .sub {
+.con-1 .text-box > .sub {
   font-size: 18px;
   color: #6c6c72;
   line-height: 1.8;
   letter-spacing: -0.02em;
 }
 
-.container .text-box > .text-1 {
+.con-1 .text-box > .text-1 {
   margin-bottom: 24px;
 }
 
-.container .text-box > .text-2 > span {
+.con-1 .text-box > .text-2 > span {
   font-weight: 500;
   color: #800000;
 }
 
-.container > .img-box {
+.con-1 > .img-box {
   position: absolute;
   width: 708px;
   height: 522px;
   top: 180px;
   right: 72px;
+  /* background-color: gold; */
   z-index: 10;
-  background-color: gold;
 }
 
-.container > .img-box > img {
+.con-1 > .img-box > img {
   width: 100%;
 }
 
-.container > .img-bg {
+.con-1 > .img-bg {
   position: absolute;
   width: 728px;
   height: 536px;
   top: 113px;
   right: 0;
   background-color: #D8C8B2;
+}
+/* --- .con-1 끝 --- */
+
+
+/* --- .con-2 시작 --- */
+.con-2 > .img-box {
+  position: absolute;
+  width: 728px;
+  height: 536px;
+  top: 180px;
+  left: 122px;;
+  z-index: 10;
+}
+
+.con-2 > .img-box > img {
+  width: 100%;
+}
+
+.con-2 > .img-bg {
+  position: absolute;
+  width: 728px;
+  height: 536px;
+  top: 96px;
+  left: 0;
+  background-color: #E7D7C7;
+}
+
+.con-2 > .text-box {
+  position: absolute;
+  right: 0;
+}
+
+.con-2 .text-box > .desc-top {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9d9da0;
+}
+
+.con-2 .text-box > h3 {
+  margin-top: 6px;
+  font-size: 44px;
+  margin-bottom: 28px;
+}
+
+.con-2 > .text-box > h3 > .highlight {
+  color: #800000;
+}
+
+.con-2 .text-box > .sub {
+  font-size: 18px;
+  color: #6c6c72;
+  line-height: 1.8;
+  letter-spacing: -0.02em;
+}
+
+.con-2 .text-box > .text-1 {
+  margin-bottom: 24px;
+}
+
+.con-2 .text-box > .text-2 > span {
+  font-weight: 500;
+  color: #800000;
 }
