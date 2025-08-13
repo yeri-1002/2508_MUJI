@@ -322,7 +322,9 @@ a {
   justify-content: space-between;
 }
 
+/* .l-box 시작 */
 .i-container .img-box > .l-box {
+  position: relative;
   display: inline-block;
   width: 760px;
   height: 660px;
@@ -332,6 +334,79 @@ a {
   display: block;
   width: 100%;
 }
+
+.i-container .img-box > .l-box > .l-dot-1 {
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  bottom: 314px;
+  left: 144px;
+  cursor: pointer;
+}
+
+.i-container .img-box > .l-box > .l-dot-1 > img {
+  /* display: block; */
+  width: 100%;
+}
+
+.i-container .img-box > .l-box > .l-info-box-1 {
+  position: absolute;
+  width: 294px;
+  height: 110px;
+  bottom: 200px;
+  left: 110px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.i-container .img-box > .l-box > .l-info-box-1 > img {
+  /* display: block; */
+  width: 100%;
+}
+
+.i-container .img-box > .l-box > .l-dot-1:hover + .l-info-box-1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.i-container .img-box > .l-box > .l-dot-2 {
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  bottom: 270px;
+  right: 280px;
+  cursor: pointer;
+}
+
+.i-container .img-box > .l-box > .l-dot-2 > img {
+  /* display: block; */
+  width: 100%;
+}
+
+.i-container .img-box > .l-box > .l-info-box-2 {
+  position: absolute;
+  width: 294px;
+  height: 110px;
+  bottom: 154px;
+  right: 32px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.i-container .img-box > .l-box > .l-info-box-2 > img {
+  /* display: block; */
+  width: 100%;
+}
+
+.i-container .img-box > .l-box > .l-dot-2:hover + .l-info-box-2 {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 .i-container .img-box > .l-box .l-title {
   margin-top: 24px;
@@ -346,6 +421,7 @@ a {
   font-weight: 400;
   color: #6C6C72;
 }
+/* .l-box 끝 */
 
 .i-container .img-box > .r-box {
   display: inline-block;
