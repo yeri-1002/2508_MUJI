@@ -423,7 +423,9 @@ a {
 }
 /* .l-box 끝 */
 
+/* .r-box 시작 */
 .i-container .img-box > .r-box {
+  position: relative;
   display: inline-block;
   width: 760px;
   height: 660px;
@@ -433,6 +435,118 @@ a {
   display: block;
   width: 100%;
 }
+
+.i-container .img-box > .r-box > .r-dot-3 {
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  top: 200px;
+  left: 70px;
+  cursor: pointer;
+}
+
+.i-container .img-box > .r-box > .r-dot-3 > img {
+  /* display: block; */
+  width: 100%;
+}
+
+.i-container .img-box > .r-box > .r-info-box-3 {
+  position: absolute;
+  width: 294px;
+  height: 110px;
+  top: 230px;
+  left: 50px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.i-container .img-box > .r-box > .r-info-box-3 > img {
+  /* display: block; */
+  width: 100%;
+}
+
+.i-container .img-box > .r-box > .r-dot-3:hover + .r-info-box-3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* .r-dot-4 시작 */
+.i-container .img-box > .r-box > .r-dot-4 {
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  bottom: 270px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.i-container .img-box > .r-box > .r-dot-4 > img {
+  /* display: block; */
+  width: 100%;
+}
+
+.i-container .img-box > .r-box > .r-info-box-4 {
+  position: absolute;
+  width: 294px;
+  height: 110px;
+  bottom: 154px;
+  right: 34px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.i-container .img-box > .r-box > .r-info-box-4 > img {
+  /* display: block; */
+  width: 100%;
+}
+
+.i-container .img-box > .r-box > .r-dot-4:hover + .r-info-box-4 {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* .r-dot-5 시작 */
+.i-container .img-box > .r-box > .r-dot-5 {
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  bottom: 240px;
+  left: 300px;
+  cursor: pointer;
+}
+
+.i-container .img-box > .r-box > .r-dot-5 > img {
+  /* display: block; */
+  width: 100%;
+}
+
+.i-container .img-box > .r-box > .r-info-box-5 {
+  position: absolute;
+  width: 294px;
+  height: 110px;
+  bottom: 126px;
+  left: 46px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.i-container .img-box > .r-box > .r-info-box-5 > img {
+  /* display: block; */
+  width: 100%;
+}
+
+.i-container .img-box > .r-box > .r-dot-5:hover + .r-info-box-5 {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 
 .i-container .img-box > .r-box .r-title {
   margin-top: 24px;
@@ -447,7 +561,9 @@ a {
   font-weight: 400;
   color: #6C6C72;
 }
+/* .r-box 끝 */
 /* --- i-banner: 인테리어 끝--- */
+
 
 /* --- footer 시작 --- */
 .f-con {
