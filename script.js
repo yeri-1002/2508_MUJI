@@ -1,5 +1,5 @@
 // 메인 슬라이드
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.main-swiper', {
   loop: true,
   autoplay: {
     delay: 4000,
@@ -21,3 +21,5 @@ function moveProgressBar(index) {
   const redBar = document.querySelector('.red-progress');
   redBar.style.left = `${index * 190}px`;
 }
+
+// 리스트 스와이퍼
