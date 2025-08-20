@@ -24,11 +24,12 @@ function moveProgressBar(index) {
 
 // 리스트 스와이퍼 (카테고리 전용)
 var swiperSub = new Swiper('.list-swiper', {
-  slidesPerView: 7,   // 한 번에 7개의 슬라이드 표시
-  spaceBetween: 20,   // 슬라이드 간 간격 설정
-  loop: false,        // 끝까지 넘기고 처음으로 돌아가지 않음
+  slidesPerView: 7,
+  spaceBetween: 20,
+  slidesPerGroup: 3,
+  loop: false,
   pagination: {
-    el: '.list-swiper .swiper-pagination', // 카테고리 전용 pagination
+    el: '.list-swiper .swiper-pagination',
     clickable: true,
     type: 'bullets',
     renderBullet: function (index, className) {

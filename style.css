@@ -181,6 +181,9 @@ a {
 }
 
 /* .swiper-pagination 커스텀 */
+:root {
+  --swiper-pagination-bullet-horizontal-gap: 8px;
+}
 .swiper-pagination {
   position: relative;
   text-align: center;
@@ -192,8 +195,8 @@ a {
   width: 8px;
   height: 8px;
   background-color: #9d9da0;
-  margin: 0 14px;
-  border-radius: 50%; /* 점을 원형으로 만듬 */
+  /* margin: 0 14px; */
+  border-radius: 50%;
 }
 
 /* 활성화된 점 스타일 */
