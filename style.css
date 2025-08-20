@@ -30,6 +30,12 @@ body {
     font-style: normal;
 }
 
+/* CSS 변수 설정 */
+/* :root {
+  --swiper-pagination-top: 0px; 
+  --swiper-pagination-bottom: 8px;
+} */
+
 /* 노말라이즈 */
 body, ul, li, h2, h3, p, span {
   margin: 0;
@@ -107,7 +113,7 @@ a {
 }
 
 
-/* -- list 시작 -- */
+/* ---- list 시작 ---- */
 .list-con {
   position: relative;
   width: 1920px;
@@ -173,6 +179,31 @@ a {
 .list-swiper > .swiper-wrapper > .swiper-slide > .text-box > a {
   font-size: 16px;
   color: #3C3C43;
+}
+
+/* .swiper-pagination 커스텀 */
+.swiper-pagination {
+  text-align: center;
+  margin-top: 40px; /* 페이지네이션과 슬라이드 사이 간격 */
+  position: relative;
+  z-index: 10;
+}
+
+/* 각 점의 스타일 */
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 14px;
+  border-radius: 50%;
+}
+
+/* 활성화된 점 스타일 */
+.swiper-pagination-bullet-active {
+  background-color: #800000;
+}
+
+.swiper-pagination-bullet:nth-child(n+5) {
+  display: none;
 }
 
 
