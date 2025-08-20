@@ -5,11 +5,214 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../style.css">
+
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="../script.js" defer></script>
 </head>
 
 <body>
+  <!-- 메인 섹션 -->
+  <div class="swiper main-swiper">
+    <div class="swiper-wrapper">
+      <!-- slide 1 -->
+      <div class="swiper-slide" style="background-image: url('../images/main-swiper-1.png');">
+        <div class="text-box">
+          <h2>비워서 채우는 공간</h2>
+          <p>
+            일상에 자연스럽게 스며들며 조용하고 단정한 공간을 만듭니다
+            <br>
+            과하지도 부족하지도 않은 균형 속에서 편안한 삶의 방식을 제안합니다
+          </p>
+        </div>
+      </div>
+
+      <!-- slide 2 -->
+      <div class="swiper-slide" style="background-image: url('../images/main-swiper-2.png');">
+        <div class="text-box">
+          <h2>물건이 쉬는 자리</h2>
+          <p>
+            나무의 결, 따뜻한 조명, 조용한 공기가 어우러진 공간은 생각 정돈과
+            <br>
+            불필요한 것을 덜어내고 필요한 것만 담아 일상의 균형을 지켜냅니다
+          </p>
+        </div>
+      </div>
+
+      <!-- slide 3 -->
+      <div class="swiper-slide" style="background-image: url('../images/main-swiper-3.png');">
+        <div class="text-box">
+          <h2>조용한 집중의 시간</h2>
+          <p>
+            따뜻한 햇살이 드는 창가와 여백이 있는 책상 위에서
+            <br>
+            생각은 자연스럽게 정리되고 집중은 더욱 깊어집니다
+          </p>
+        </div>
+      </div>
+
+      <!-- slide 4 -->
+      <div class="swiper-slide" style="background-image: url('../images/main-swiper-4.png');">
+        <div class="text-box">
+          <h2>하루의 끝, 휴식</h2>
+          <p>
+            자연의 빛과 조용한 여백이 어우러진 공간에서 부드럽고
+            <br>
+            차분한 분위기와 정돈된 침구는 편안한 휴식을 선사합니다
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- progress-bar -->
+    <div class="progress-bar">
+      <div class="red-progress"></div>
+    </div>
+  </div>
+
+  <!-- 카테고리 -->
+  <div class="list-con">
+    <div class="list-text-box">
+      <div class="l-title"><p>카테고리별 상품 찾기</p></div>
+      <div class="l-sub"><p>필요한 것을 쉽게 찾을 수 있도록 담았습니다.</p></div>
+    </div>
+
+    <div class="list-swiper swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-1.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">전체보기</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-2.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">가구</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-3.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">가전/디지털</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-4.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">문구</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-5.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">뷰티</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-6.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">수납/정리</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-7.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">의류</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-8.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">주방용품</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-9.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">패션잡화</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-10.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">패브릭</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-11.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">생활용품</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-12.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">간편조리</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-13.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">스낵</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="images/list-14.png" alt="">
+          </div>
+          <div class="text-box">
+            <a href="#">GIFT CARD</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
   <!-- 메인 배너 1 -->
   <section class="main-banner">
     <div class="container con-1">
