@@ -53,6 +53,105 @@ a {
 }
 
 
+/* header 시작 */
+/* header */
+.nav-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100px;
+  z-index: 100;
+}
+
+.nav-menu:hover {
+  background-color: #F2F1ED;
+  opacity: .3;
+}
+
+.nav-content {
+  height: 100%;
+  border-bottom: 1px solid #F2F1ED;
+}
+
+.nav-items {
+  width: 1540px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  display: block;
+  /* height: 180px; */
+}
+
+.nav-logo > a {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-logo > a > img {
+  display: block;
+  width: 180px;
+  height: auto;
+}
+
+.nav-items > .nav-item {
+  position: relative;
+  margin-left: 80px;
+}
+
+.nav-logo + .nav-item {
+  margin-left: 250px;
+}
+
+.nav-item a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #F2F1ED;
+  white-space: nowrap;
+}
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #F2F1ED;
+  transition: width .3s;
+}
+
+.nav-item:hover a::after {
+  width: 100%;
+}
+
+.nav-ico {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-ico a {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-ico a > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
 /* -- main-swiper 시작 -- */
 .main-swiper {
   position: relative;
