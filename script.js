@@ -35,4 +35,16 @@ var swiperSub = new Swiper('.list-swiper', {
       return '<span class="' + className + '"></span>';
     }
   }
-})
+});
+
+// 기획전 스와이퍼
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    type: 'progressbar',
+  },
+});
