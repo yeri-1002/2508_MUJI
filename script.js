@@ -1,3 +1,24 @@
+// 메뉴바
+let lastScroll = 0;
+const nav = document.querySelector(".nav-menu");
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll && currentScroll > 600) {
+    // 아래로 스크롤
+    nav.classList.add("hide");
+    nav.classList.remove("show");
+  } else {
+    // 위로 스크롤
+    nav.classList.add("show");
+    nav.classList.remove("hide");
+  }
+
+  lastScroll = currentScroll;
+});
+
+
 // 메인 슬라이드
 const swiperMain = new Swiper('.main-swiper', {
   loop: true,
