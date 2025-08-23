@@ -49,3 +49,10 @@ var swiper = new Swiper('.swiper-container', {
     type: 'progressbar',
   },
 });
+
+new Swiper(".md-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: false,
+  slidesOffsetAfter: 130,
+});
