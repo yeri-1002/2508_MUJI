@@ -589,9 +589,9 @@ a {
 /* --- .con-2 끝 --- */
 
 /* --- 기획전 시작--- */
-:root {
+/* :root {
   --swiper-pagination-color: #800000;
-}
+} */
 
 .content-banner {
   position: relative;
@@ -745,6 +745,27 @@ a {
   width: 100%;
 }
 
+.content-banner .swiper-pagination {
+  position: relative;
+  width: 1540px;
+  height: 4px;
+  margin-top: 48px;
+  margin-bottom: 135px;
+  background-color: #d9d9d9;
+  border-radius: 2px;;
+}
+
+.content-banner .swiper-pagination-progressbar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #800000;
+  border-radius: 2px;
+  transform: translateX(0);
+}
+
+/* 
 .content-banner .swiper-pagination-progressbar {
   background-color: #d9d9d9;
   position: relative;
@@ -752,9 +773,9 @@ a {
   margin-bottom: 135px;
   bottom: 0;
   height: 4px;
-}
+} */
 
-/* --- .magazine 시작 --- */
+/* --- magazine 시작 --- */
 .mg-banner {
   position: relative;
   width: 100%;

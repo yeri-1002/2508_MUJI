@@ -71,6 +71,7 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
+// MD'S PICK
 new Swiper(".md-swiper", {
   slidesPerView: 3,
   spaceBetween: 20,
