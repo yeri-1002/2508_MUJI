@@ -81,7 +81,7 @@ new Swiper(".md-swiper", {
 
 // BEST PRODUCTS
 new Swiper(".best-swiper", {
-  slidesPerView: 5,     // 한 화면에 5개
-  spaceBetween: 20,     // 간격
-  loop: false,          // 반복 여부
+  slidesPerView: 5,
+  spaceBetween: 20,
+  loop: false,
 });
