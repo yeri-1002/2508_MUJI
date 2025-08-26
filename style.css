@@ -547,7 +547,7 @@ a {
 .b-box > .text-box {
   width: 1540px;
   margin: 0 auto;
-  padding-top: 96px;
+  padding-top: 100px;
   text-align: center;
 }
 
@@ -652,6 +652,12 @@ a {
   font-size: 15px;
   color: #9D9DA0;
 }
+
+/* .best-swiper .bg-progress-bar {
+  width: 604px;
+  height: 4px;
+  background-color: #d9d9d9;
+} */
 
 
 /* --- con-2 시작 --- */

@@ -84,4 +84,10 @@ new Swiper(".best-swiper", {
   slidesPerView: 5,
   spaceBetween: 20,
   loop: false,
+
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  //   type: 'progressbar',
+  // },
 });
