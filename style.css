@@ -49,9 +49,30 @@ body {
 }
 
 a {
+  display: block;
   color: inherit;
   text-decoration: none;
 }
+
+  /* 스크롤바 커스텀 시작 */
+body::-webkit-scrollbar {
+  width: 4px;
+  height: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 15%;
+  background-color: #800000;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #EDE9E8;
+}
+.swiper-horizontal {
+  touch-action: auto;
+}
+/* 스크롤바 커스텀 끝 */
 
 
 /* -- header 시작 -- */
@@ -72,7 +93,7 @@ a {
   background-color: rgba(255, 255, 255, .4);
 }
 
-.nav-menu:hover .nav-item a {
+.nav-menu:hover .menu-item a {
   color: #1d1d1f;
 }
 
@@ -93,14 +114,12 @@ a {
   align-items: center;
 }
 
-
-
-.menu-item > ul {
+/* .menu-item > ul {
   position: relative;
   top: 100px;
   left: 0;
   border: 3px solid red;
-}
+} */
 
 
 .nav-logo {
@@ -120,16 +139,16 @@ a {
   height: auto;
 }
 
-.nav-items > .nav-item {
+.nav-items > .menu-item {
   position: relative;
   margin-left: 80px;
 }
 
-.nav-logo + .nav-item {
+.nav-logo + .menu-item {
   margin-left: 250px;
 }
 
-.nav-item a {
+.menu-item a {
   font-size: 18px;
   font-weight: 500;
   color: #F2F1ED;
@@ -137,7 +156,7 @@ a {
   /* transition: color .3s; */
 }
 
-.nav-item a::after {
+.menu-item a::after {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -148,19 +167,19 @@ a {
   transition: width .3s;
 }
 
-.nav-item:hover a::after {
+.menu-item:hover a::after {
   width: 100%;
   background: #1D1D1F;
 }
 
-.nav-ico {
+.menu-ico {
   margin-left: auto;
   display: flex;
   align-items: center;
   gap: 35px;
 }
 
-.nav-ico a {
+.menu-ico a {
   width: 24px;
   height: 24px;
   display: inline-flex;
@@ -168,7 +187,7 @@ a {
   align-items: center;
 }
 
-.nav-ico a > img {
+.menu-ico a > img {
   display: block;
   width: 100%;
   height: 100%;
