@@ -75,71 +75,37 @@ body::-webkit-scrollbar-track {
 /* 스크롤바 커스텀 끝 */
 
 
-/* -- header 시작 -- */
-/* 메뉴 */
-.nav-menu {
+/* 기본 메뉴 스타일 */
+.menu {
   position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
+  top: 0; left: 0; right: 0;
   height: 100px;
-  z-index: 100;
-  background-color: transparent;
-  transition: background-color .3s;
-}
-
-/* 메뉴 호버 시 */
-.nav-menu:hover {
-  background-color: rgba(255, 255, 255, .4);
-}
-
-.nav-menu:hover .menu-item a {
-  color: #1d1d1f;
-}
-
-.nav-menu:hover .nav-logo img {
-  content: url('images/header-logo-red.png');
-}
-
-.nav-content {
-  height: 100%;
+  background: transparent;
   border-bottom: 1px solid #F2F1ED;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.menu:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .nav-items {
   width: 1540px;
-  height: 100%;
   margin: 0 auto;
+  height: 100%;
   display: flex;
   align-items: center;
-}
-
-/* .menu-item > ul {
   position: relative;
-  top: 100px;
-  left: 0;
-  border: 3px solid red;
-} */
-
-
-.nav-logo {
-  display: block;
-  /* height: 180px; */
 }
 
-.nav-logo > a {
-  display: inline-flex;
-  align-items: center;
-  height: 100%;
-}
-
-.nav-logo > a > img {
-  display: block;
+.nav-logo a img {
   width: 180px;
   height: auto;
 }
 
-.nav-items > .menu-item {
+/* 1차 메뉴 아이템 */
+.menu-item {
   position: relative;
   margin-left: 80px;
 }
@@ -149,59 +115,98 @@ body::-webkit-scrollbar-track {
 }
 
 .menu-item a {
+  color: #F2F1ED;
   font-size: 18px;
   font-weight: 500;
-  color: #F2F1ED;
+  text-decoration: none;
   white-space: nowrap;
-  /* transition: color .3s; */
+  position: relative;
+  padding: 10px 0;
+  display: inline-block;
 }
 
 .menu-item a::after {
   content: "";
   position: absolute;
-  bottom: -3px;
+  bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
-  /* background-color: #F2F1ED; */
-  transition: width .3s;
+  background: transparent;
+  transition: width 0.3s, background-color 0.3s;
 }
 
-.menu-item:hover a::after {
+.menu-item:hover > a {
+  color: #1D1D1F;
+}
+
+.menu-item:hover > a::after {
   width: 100%;
-  background: #1D1D1F;
+  background-color: #1D1D1F;
 }
 
+/* 우측 아이콘 메뉴 */
 .menu-ico {
   margin-left: auto;
   display: flex;
-  align-items: center;
   gap: 35px;
 }
 
-.menu-ico a {
+.menu-ico a img {
   width: 24px;
   height: 24px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.menu-ico a > img {
+/* 서브 메뉴 기본 숨김 */
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 1920px;
+  background-color: white;
+  height: 525px;
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
+  z-index: 1000;
+}
+
+/* 1차 메뉴 호버 시 서브 메뉴 보이기 */
+.menu-item.sub-menu-parent:hover > .sub-menu {
   display: block;
-  width: 100%;
-  height: 100%;
 }
 
-/* 메뉴 숨김 상태 */
-.nav-menu.hide {
-  transform: translateY(-100%);
+/* 서브 메뉴 리스트 */
+.sub-menu-list {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto 0;
+  width: 1540px;
+  gap: 40px;
+  padding: 0;
+  list-style: none;
 }
 
-/* 메뉴 보임 상태 */
-.nav-menu.show{
-  transform: translateY(0%);
+/* 각 서브 메뉴 항목 */
+.sub-menu-list li a {
+  display: block;
+  padding: 5px 0;
+  color: #1D1D1F;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
 }
+
+/* 각 서브 메뉴 위치 조정 (의복, 생활 위치 맞춤) */
+.menu-item.sub-menu-parent:nth-child(3) > .sub-menu .sub-menu-list {
+  margin-left: 250px; /* 의복 메뉴 시작 위치와 동일하게 */
+}
+
+.menu-item.sub-menu-parent:nth-child(4) > .sub-menu .sub-menu-list {
+  margin-left: 250px + 80px; /* 의복 다음 메뉴 간격 고려 */
+  margin-left: calc(250px + 80px);
+}
+
 
 
 /* -- main-swiper 시작 -- */
