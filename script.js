@@ -1,6 +1,6 @@
 // 메뉴바
 let lastScroll = 0;
-const nav = document.querySelector(".nav-menu");
+const nav = document.querySelector(".menu-wrap");
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
@@ -20,22 +20,22 @@ window.addEventListener("scroll", () => {
 
 
 // 메인 슬라이드
-const swiperMain = new Swiper('.main-swiper', {
-  loop: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  speed: 800,
-  on: {
-    init: function () {
-      moveProgressBar(this.realIndex); // 초기 슬라이드 인덱스에 맞춰 프로그래스 바 이동
-    },
-    slideChangeTransitionStart: function () {
-      moveProgressBar(this.realIndex); // 슬라이드 변경 시 프로그래스 바 이동
-    }
-  }
-});
+// const swiperMain = new Swiper('.main-swiper', {
+//   loop: true,
+//   autoplay: {
+//     delay: 4000,
+//     disableOnInteraction: false,
+//   },
+//   speed: 800,
+//   on: {
+//     init: function () {
+//       moveProgressBar(this.realIndex); // 초기 슬라이드 인덱스에 맞춰 프로그래스 바 이동
+//     },
+//     slideChangeTransitionStart: function () {
+//       moveProgressBar(this.realIndex); // 슬라이드 변경 시 프로그래스 바 이동
+//     }
+//   }
+// });
 
 // 프로그래스 바 이동 함수
 function moveProgressBar(index) {
