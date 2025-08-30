@@ -89,6 +89,17 @@ body::-webkit-scrollbar-track {
   z-index: 1000;
 }
 
+/* 메뉴바 스크롤 */
+.menu-wrap.hide {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.menu-wrap.show {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
 .menu-wrap > .menu-con {
   position: relative;
   display: flex;
