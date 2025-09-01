@@ -1410,13 +1410,17 @@ footer .f-box > .menu-box-1 > ul > li.f-head {
   font-weight: 500;
 }
 
-footer .f-box > .menu-box-1 > ul > li:not(.f-head) {
-  display: inline-block;
-  font-weight: 600;
+footer .f-box > .menu-box-1 .f-sub {
+  display: flex;
 }
 
-footer .f-box > .menu-box-1 > ul > li:not(.f-head):not(:last-child)::after {
-  content: "|";
+footer .f-box > .menu-box-1 .f-sub > li {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.f-sub .divider {
+  display: inline;
   margin: 0 10px;
   color: #EDE1D5;
 }
@@ -1428,15 +1432,37 @@ footer .f-box > .menu-box-2 {
   font-size: 13px;
 }
 
-footer .f-box > .menu-box-2 > ul > li {
-  display: inline-block;
+footer .f-box > .menu-box-2 > .menu-top {
+  display: flex;
 }
 
-footer .f-box > .menu-box-2 > ul > li:not(:last-child):not(:nth-child(3))::after {
-  content: "|";
-  margin: 0 10px;
+footer .f-box > .menu-box-2 > .menu-top > li {
+  display: flex;
+  gap: 10px;
+}
+
+footer .f-box > .menu-box-2 > .menu-top > li:not(:first-child) {
+  margin-left: 10px;
+}
+
+footer .f-box > .menu-box-2 .divier {
+  display: inline;
   color: #EDE1D5;
 }
+
+footer .f-box > .menu-box-2 > .menu-bottom {
+  display: flex;
+}
+
+footer .f-box > .menu-box-2 > .menu-bottom > li {
+  display: flex;
+  gap: 10px;
+}
+
+footer .f-box > .menu-box-2 > .menu-bottom > li:not(:first-child) {
+  margin-left: 10px;
+}
+
 
 footer .f-box > .menu-box-3 {
   margin-top: 10px;
