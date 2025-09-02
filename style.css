@@ -60,7 +60,7 @@ a {
   margin: 0 auto;
 }
 
-  /* 스크롤바 커스텀 시작 */
+/* 스크롤바 커스텀 시작 */
 body::-webkit-scrollbar {
   width: 4px;
   height: 0;
@@ -100,7 +100,7 @@ body::-webkit-scrollbar-track {
   transition: transform 0.3s ease;
 }
 
-/* 시작 */
+/* 메뉴바 시작 */
 .menu-con {
   position: relative;
   display: flex;
