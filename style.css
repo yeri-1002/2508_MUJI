@@ -183,7 +183,7 @@ body::-webkit-scrollbar-track {
   top: 100%;
   left: 0;
   width: 100vw;
-  height: 625px;
+  height: 550px;
   background-color: #fff;
   /* display: none; */
 }
@@ -233,6 +233,14 @@ body::-webkit-scrollbar-track {
 
 .menu:hover .menu-logo img {
   content: url(images/header-logo-red.png);
+}
+
+.menu:hover .menu-ico > .search > img {
+  content: url(images/header.search-black.png);
+}
+
+.menu:hover .menu-ico > .mypage > img {
+  content: url(images/header.mypage-black.png);
 }
 
 .menu:hover .m-title > li > a {
@@ -1029,7 +1037,7 @@ body::-webkit-scrollbar-track {
 }
 
 .mg-banner > .m-container {
-  max-width: 1540px;
+  width: 1540px;
   position: relative;
   height: 100%;
   margin: 0 auto;
