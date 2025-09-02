@@ -100,160 +100,178 @@ body::-webkit-scrollbar-track {
   transition: transform 0.3s ease;
 }
 
-.menu-wrap > .menu-con {
+/* 시작 */
+.menu-con {
   position: relative;
   display: flex;
-  /* justify-content: space-between; */
-  width: 100%;
-  padding: 0 190px;
+  justify-content: space-between;
+  width: 1540px;
+  height: 80px;
+  margin: 0 auto;
   background-color: transparent;
-  border-bottom: 1px solid #F2F1ED;
-  transition: background-color .3s;
+  white-space: nowrap;
 }
 
-.menu-con:hover {
-  background-color: #fff;
-  border-bottom: 1px solid #3C3C43;
-}
-
-.menu-con:hover .menu-item > ul > li > a {
-  color: #1d1d1f;
-}
-
-.menu-con:hover .logo-box img {
-  content: url('../images/header-logo-red.png');
-}
-
-.menu-con > .left-menu {
-  display: flex;
-  margin-right: 290px;
-}
-
-.menu-con .logo-box {
+.menu-logo {
   display: flex;
   align-items: center;
-  left: 0;
   width: 180px;
-  height: auto;
-  margin-right: 200px;
 }
 
-.menu-con .logo-box img {
+.menu-logo img {
   display: block;
   width: 100%;
 }
 
-.menu-con .menu-item {
-  position: relative;
-}
-
-.menu-con .menu-item > ul {
+.m-container {
+  width: 1090px;
   display: flex;
-  gap: 80px;
-  padding: 28px 0;
+  justify-content: space-between;
 }
 
-.menu-item > ul > li {
-  position: relative;
+.m-title {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
 }
 
-.menu-con .menu-item > ul > li > a {
+.m-title > li {
+  margin-left: 40px;
+  padding-left: 40px;
+}
+
+.m-title > li > a {
   display: inline-block;
+  position: relative;
   font-size: 18px;
-  font-weight: 500;
+  line-height: 1.4;
+  padding: 30px 0;
   color: #F2F1ED;
-  white-space: nowrap;
 }
 
-.menu-item a::after {
+.m-title > li > a::after {
   content: "";
   position: absolute;
-  bottom: -3px;
   left: 0;
+  bottom: 26px;
   width: 0;
   height: 2px;
+  background-color: #800000;
   transition: width .3s;
+  z-index: 2;
 }
 
-.menu-item li:hover a::after {
+.menu:hover .m-title > li:hover > a {
+  color: #800000;
+}
+
+
+.m-title > li > a:hover::after {
   width: 100%;
-  background-color: #1d1d1f;
 }
 
-.menu-con .menu-icon {
+.m-title ul > li > a {
+  display: block;
+  font-size: 16px;
+  padding: 20px 30px;
+  color: #6C6C72;
+}
+
+/* 2차+3차메뉴 */
+.m-sub-warp {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  height: 625px;
+  background-color: #fff;
+  /* display: none; */
+}
+
+.m-sub {
+  /* display: none; */
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  top: 100%;
+  left: 0;
+  text-align: left;
+  background-color: #fff;
+}
+
+.m-sub > li {
+  position: relative;
+  width: 290px;
+  border-bottom: 1px solid #b9b9b9;
+}
+
+.m-det {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  /* width: calc(1540px - 290px); */
+  height: 100%;
+}
+
+.m-det li {
+  display: inline-block;
+  background-color: #fff;
+}
+
+.m-sub, .m-det {
+  display: none;
+}
+
+/* 호버 시 */
+.menu:hover {
+  background-color: #fff;
+  color: #1D1D1F;
+  font-weight: 500;
+}
+
+.menu:hover .menu-logo img {
+  content: url(images/header-logo-red.png);
+}
+
+.menu:hover .m-title > li > a {
+  color: #1D1D1F;
+}
+
+.m-sub > li:hover > a {
+  background-color: #F2F1ED;
+  color: #1D1D1F;
+  font-weight: 500;
+}
+
+.m-title > li:hover > .m-sub-wrap {
   display: flex;
-  padding-top: 28px;
-  height: 24px;
+}
+
+.m-title > li:hover .m-sub {
+  display: block;
+}
+
+.m-title > li:hover > .m-det {
+  display: flex;
+}
+
+/* 2차 메뉴 hover 시 다른 3차가 교체 */
+.m-sub > li:hover > .m-det {
+  display: flex;
+}
+
+.menu-ico {
+  display: flex;
+  align-items: center;
   gap: 35px;
 }
 
-.menu-icon img {
+.menu-ico img {
   display: block;
   width: 24px;
-  height: 24px;
 }
-
-.sub-menu {
-  display: none;
-  position: relative;
-  width: 1920px;
-  height: 580px;
-  white-space: nowrap;
-}
-
-.dropdown {
-  display: flex;
-  justify-content: flex-start;
-  width: 1540px;
-  height: auto;
-  margin: 0 auto;
-  background-color: transparent;
-}
-
-.dropdown .item-1 {
-  margin-left: 490px;
-  margin-right: 36px;
-}
-
-.dropdown .item-2 {
-  margin-right: 52px;
-}
-
-.dropdown ul {
-  text-align: center;
-}
-
-.dropdown ul li {
-  position: relative;
-  margin: 24px 0;
-}
-
-.dropdown ul li a {
-  position: relative;
-  display: inline-block;
-  font-size: 17px;
-}
-
-.dropdown ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #3c3c3c;
-  transition: width .3s;
-}
-
-.dropdown ul li a:hover::after {
-  width: 100%;
-}
-
-.menu-wrap:hover .sub-menu {
-  display: block;
-  background-color: #fff;
-}
-
 
 
 /* -- main-swiper 시작 -- */
