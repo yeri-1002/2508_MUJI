@@ -280,6 +280,7 @@ body::-webkit-scrollbar-track {
   text-decoration-thickness: 1.5px;
 }
 
+/* 메뉴 아이콘 */
 .menu-ico {
   margin-right: 190px;
   display: flex;
