@@ -105,11 +105,19 @@ body::-webkit-scrollbar-track {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 1540px;
+  width: 100%;
   height: 80px;
   margin: 0 auto;
   background-color: transparent;
   white-space: nowrap;
+}
+
+.m-container {
+  width: 1090px;
+  margin-left: 190px;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .menu-logo {
@@ -121,12 +129,6 @@ body::-webkit-scrollbar-track {
 .menu-logo img {
   display: block;
   width: 100%;
-}
-
-.m-container {
-  width: 1090px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .m-title {
@@ -195,6 +197,7 @@ body::-webkit-scrollbar-track {
   height: 550px;
   top: 100%;
   left: 0;
+  padding-left: 190px;
   text-align: left;
   background-color: #fff;
 }
@@ -692,14 +695,22 @@ body::-webkit-scrollbar-track {
 }
 
 .swiper-wrapper .bp-container > .bp-img {
+  position: relative;
+  overflow: hidden;
   width: 292px;
   height: 335px;
   /* background-color: gold; */
 }
 
+
 .swiper-wrapper .bp-container > .bp-img > img {
   display: block;
   width: 100%;
+  transition: transform .3s;
+}
+
+.swiper-wrapper .bp-container > .bp-img:hover > img {
+  transform: scale(1.05);
 }
 
 .swiper-wrapper .bp-container > .bp-info {
