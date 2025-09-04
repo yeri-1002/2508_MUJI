@@ -594,10 +594,10 @@ body::-webkit-scrollbar-track {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px;
+  bottom: -4px;
   width: 0;
   height: 1px;
-  background-color: var(--color-bg-w);
+  background-color: var(--color-bg-100);
   transition: width .3s;
 }
 
