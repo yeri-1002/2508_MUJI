@@ -207,7 +207,7 @@ body::-webkit-scrollbar-track {
   left: 0;
   width: 100vw;
   height: 550px;
-  background-color: var(--color-bg-w);
+  background-color: var(--color-bg-100);
   /* display: none; */
 }
 
@@ -220,7 +220,7 @@ body::-webkit-scrollbar-track {
   left: 0;
   padding-left: 190px;
   text-align: left;
-  background-color: var(--color-bg-w);
+  background-color: var(--color-bg-100);
 }
 
 .m-sub > li {
@@ -241,7 +241,7 @@ body::-webkit-scrollbar-track {
 
 .m-det li {
   display: inline-block;
-  background-color: var(--color-bg-w);;
+  background-color: var(--color-bg-100);;
 }
 
 .m-sub, .m-det {
@@ -250,7 +250,7 @@ body::-webkit-scrollbar-track {
 
 /* 호버 시 */
 .menu:hover {
-  background-color: var(--color-bg-w);;
+  background-color: var(--color-bg-100);;
   color: var(--color-text-m);
   font-weight: 500;
 }
@@ -380,7 +380,7 @@ body::-webkit-scrollbar-track {
   position: relative;
   width: 1920px;
   height: 510px;
-  background-color: var(--color-bg-w);;
+  background-color: var(--color-bg-100);;
 }
 
 .list-con > .list-text-box {
@@ -672,7 +672,7 @@ body::-webkit-scrollbar-track {
   position: relative;
   width: 1920px;
   height: 937px;
-  background-color: var(--color-bg-w);
+  background-color: var(--color-bg-100);
 }
 
 .b-container {
