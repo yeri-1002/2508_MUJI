@@ -338,7 +338,7 @@ body::-webkit-scrollbar-track {
 .progress-bar {
   position: absolute;
   width: 760px;
-  height: 4px;
+  height: 2px;
   bottom: 130px;
   left: 190px;
   background-color: #A69D93;
@@ -348,7 +348,7 @@ body::-webkit-scrollbar-track {
 .progress-bar > .red-progress {
   position: absolute;
   width: 190px;
-  height: 4px;
+  height: 2px;
   background-color: #800000;
   transition: left .4s;
 }
