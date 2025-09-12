@@ -1007,7 +1007,7 @@ body::-webkit-scrollbar-track {
 }
 
 .p-container > .p-info > .p-title {
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 700;
   color: var(--color-text-m);
   margin-bottom: 14px;
@@ -1182,7 +1182,7 @@ body::-webkit-scrollbar-track {
 .i-container > .text-box > .t-con > .i-button > a {
   position: relative;
   display: block;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--color-text-g-300);
 }
 
