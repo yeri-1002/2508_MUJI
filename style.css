@@ -614,6 +614,7 @@ body::-webkit-scrollbar-track {
   width: 362px;
   height: 362px;
   margin: 14px auto 0;
+  overflow: hidden;
 }
 
 .md-swiper > .swiper-wrapper > .swiper-slide > .img-box img {
@@ -621,6 +622,11 @@ body::-webkit-scrollbar-track {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform .3s;
+}
+
+.md-swiper > .swiper-wrapper > .swiper-slide > .img-box:hover img {
+  transform: scale(1.08);
 }
 
 .md-swiper > .swiper-wrapper > .swiper-slide .swiper-text {
@@ -713,6 +719,7 @@ body::-webkit-scrollbar-track {
 
 .swiper-wrapper .bp-container > .bp-img:hover > img {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .swiper-wrapper .bp-container > .bp-info {
