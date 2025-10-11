@@ -1439,6 +1439,7 @@ body::-webkit-scrollbar-track {
 
 /* --- footer 시작 --- */
 .f-con {
+  position: relative;
   width: 1540px;
   margin: 0 auto;
 }
@@ -1449,7 +1450,7 @@ footer {
 }
 
 footer .f-box {
-  padding: 58px 0 120px;
+  padding: 58px 0 110px;
   font-size: 15px;
   color: #EDE1D5;
 }
@@ -1540,5 +1541,15 @@ footer .f-box > .menu-box-3 {
 
 footer .f-box > .menu-box-3 > .info-copyright {
   margin-bottom: 4px;
+}
+
+footer .f-box > .menu-box-4 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  top: 170px;
+  right: 0;
 }
 /* --- footer 끝 --- */
