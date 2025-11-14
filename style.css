@@ -525,7 +525,7 @@ body::-webkit-scrollbar-track {
 .md-banner {
   position: relative;
   padding: 150px 0;
-  background: url('../images/md-swiper-main.png') no-repeat center center / cover;
+  background: url('images/md-swiper-main.png') no-repeat center center / cover;
 }
 
 /* 내부 컨테이너 */
